@@ -1,0 +1,48 @@
+/* styles/Home.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.article {
+  width: 60%; /* Adjust width as needed */
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #1e1e1e; /* Slightly lighter background for articles */
+}
+
+.article h2 {
+  cursor: pointer;
+  color: #1e90ff; /* Link color */
+}
+
+.article p {
+  margin: 0.5rem 0;
+}
+
+.article div {
+  margin-top: 1rem;
+}
+
+.articleContent img {
+  max-width: 100%;
+  height: auto;
+}
+
+.date {
+  color: green;
+  font-size: 0.8rem;
+}
