@@ -20,7 +20,7 @@ Capturing and analyzing HTTP traffic is crucial for mobile testing and cybersecu
    - Select **Manual** and enter the IP address of the machine running Burp Suite and the port number (e.g., 8080).
 
 4. **Install Burp Suite Certificate on iOS**:
-   - Open Safari on your iOS device and go to http://burpsuite.
+   - Open Safari on your iOS device and go to http://burpsuite
    - Download the CA certificate.
    - Go to **Settings > General > Profiles** and install the certificate.
    - Enable the certificate via **Settings > General > About > Certificate Trust Settings**.
@@ -30,13 +30,3 @@ In case you are unable to connect with the proxy, turn off your antivirus softwa
 
 Here's a sample code snippet to configure proxy settings on an iOS device programmatically:
 
-
-
-
-<div align="center">
-  
-  ![Burp Suite Setup](../public/article-images/burp-suite-setup.jpg)
-
-# Burp Suite
-
-</div>
