@@ -23,5 +23,6 @@ To get started with the development server, follow these steps:
 3. **Start the development server:**
 
     ```bash
-    npm run dev
+    nvm install 18.17.0
+        npm run dev
     ```

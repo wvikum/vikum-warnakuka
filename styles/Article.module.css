@@ -39,8 +39,8 @@
 }
 
 .code-block {
-  background-color: #2d2d2d; /* Dark grey background for code blocks */
-  color: #383963; /* Monokai text color */
+  background-color: #2d2d2d; 
+  color: #585ac3;
   padding: 16px;
   border-radius: 8px;
   overflow-x: auto;

@@ -61,6 +61,11 @@ export async function getStaticProps() {
     };
   });
 
+  // Sort articles by date in descending order
+  articles.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
   return {
     props: {
       articles,

@@ -9,6 +9,10 @@ const profileData = {
   socialLinks: [
     { href: "https://www.linkedin.com/in/vikum-warnakula/", label: "LinkedIn" },
     { href: "https://github.com/swvikum", label: "GitHub" },
+    {
+      href: "https://www.instagram.com/sky_mantis?igsh=c2l2a3RjZXh5aGxi&utm_source=qr",
+      label: "SkyMantis",
+    }, // Add your Instagram link here
   ],
 };
 
