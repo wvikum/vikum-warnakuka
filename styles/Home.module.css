@@ -5,9 +5,10 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #121212; /* Dark background */
-  color: #ffffff; /* White text */
-  padding: 2rem;
+  background-color: #201a1a; /* Dark background */
+  padding: 20px;
+  margin-top: 20vh; /* Push content below the fixed header */
+  color: #f8f8f2; /* Off-white font color */
 }
 
 .header {
