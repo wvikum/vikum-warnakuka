@@ -49,17 +49,17 @@
 }
 
 /* Add media query for mobile devices */
-@media (max-width: 700px) {
+@media (max-width: 600px) {
   .article {
-    width: 95%; /* Make it take most of the screen width */
-    padding: 0.5rem; /* Reduce padding for smaller screens */
+    width: 99%; /* Make it take most of the screen width */
+    padding: 0.2rem; /* Reduce padding for smaller screens */
   }
 
   .article h2 {
-    font-size: 1.2em; /* Slightly smaller font size for titles */
+    font-size: 1.0em; /* Slightly smaller font size for titles */
   }
 
   .article p {
-    margin: 0.25rem 0; /* Reduce margin for paragraphs */
+    margin: 0.20rem 1; /* Reduce margin for paragraphs */
   }
 }
