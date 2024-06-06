@@ -5,9 +5,10 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: #121212; /* Dark background */
-  color: #ffffff; /* White text */
-  padding: 2rem;
+  background-color: #201a1a; /* Dark background */
+  padding: 20px;
+  padding-top: 40vh; /* Push content below the fixed header */
+  color: #f8f8f2; /* Off-white font color */
 }
 
 .header {
@@ -45,4 +46,15 @@
 .date {
   color: green;
   font-size: 0.8rem;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .container {
+    padding-top: 20vh; /* Adjust padding for mobile devices */
+  }
+
+  .article {
+    width: 90%; /* Adjust width for mobile devices */
+  }
 }

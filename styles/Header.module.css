@@ -1,0 +1,79 @@
+/* header.module.css */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh; /* 2/5 of the viewport height */
+  background: url('../public/bg-code.png') no-repeat center center;
+  background-size: cover;
+  color: #ffffff; /* Typical hacker green font color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: top 0.5s; /* Smooth transition for disappearing effect */
+  z-index: 1000;
+}
+
+.header.hidden {
+  top: -40vh; /* Move header out of view */
+}
+
+.profileImg {
+  border-radius: 50%;
+  border: 2px solid #0d0d0d;
+  margin-bottom: 10px;
+}
+
+.header h1, .header p, .socialLinks {
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 3rem; /* Adjust font size for desktop */
+}
+
+.header p {
+  font-size: 1.3rem; /* Adjust font size for desktop */
+}
+
+.socialLinks a {
+  color: #6b80ea;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.socialLinks a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .header {
+    height: 30vh; /* Adjust header height for mobile devices */
+  }
+
+  .header.hidden {
+    top: -30vh; /* Move header out of view for mobile devices */
+  }
+
+  .profileImg {
+    width: 80px; /* Adjust profile image size for mobile devices */
+    height: 80px;
+  }
+
+  .header h1 {
+    font-size: 2rem; /* Adjust font size for mobile devices */
+  }
+
+  .header p {
+    font-size: 1rem; /* Adjust font size for mobile devices */
+  }
+
+  .socialLinks a {
+    margin: 0 3px; /* Adjust spacing for social links on mobile devices */
+  }
+}
