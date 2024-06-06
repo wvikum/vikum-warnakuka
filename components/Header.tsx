@@ -49,8 +49,8 @@ const Header: React.FC = () => {
         src={profileImgSrc}
         alt="Profile Picture"
         className={styles.profileImg}
-        width={150}
-        height={150}
+        width={200}
+        height={200}
         quality={100} // Optional: Adjust quality as needed
       />
       <h1>{name}</h1>

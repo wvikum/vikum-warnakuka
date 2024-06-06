@@ -1,3 +1,4 @@
+/* header.module.css */
 .header {
   position: fixed;
   top: 0;
@@ -44,4 +45,36 @@
 .content {
   margin-top: 40vh; /* Push content down to start below the header */
   padding: 20px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .header {
+    height: 30vh; /* Adjust header height for mobile devices */
+  }
+
+  .header.hidden {
+    top: -30vh; /* Move header out of view for mobile devices */
+  }
+
+  .content {
+    margin-top: 30vh; /* Adjust content margin for mobile devices */
+  }
+
+  .profileImg {
+    width: 80px; /* Adjust profile image size for mobile devices */
+    height: 80px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem; /* Adjust font size for mobile devices */
+  }
+
+  .header p {
+    font-size: 1rem; /* Adjust font size for mobile devices */
+  }
+
+  .socialLinks a {
+    margin: 0 3px; /* Adjust spacing for social links on mobile devices */
+  }
 }
