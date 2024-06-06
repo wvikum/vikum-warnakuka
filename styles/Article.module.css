@@ -1,6 +1,7 @@
 /* styles/Article.module.css */
 .article {
   width: 60%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the article */
   margin-bottom: 2rem;
   padding: 1rem;
   border: 1px solid #333;
@@ -39,10 +40,26 @@
 }
 
 .code-block {
-  background-color: #2d2d2d; 
+  background-color: #2d2d2d;
   color: #585ac3;
   padding: 16px;
   border-radius: 8px;
   overflow-x: auto;
   font-family: 'Source Code Pro', monospace;
+}
+
+/* Add media query for mobile devices */
+@media (max-width: 700px) {
+  .article {
+    width: 95%; /* Make it take most of the screen width */
+    padding: 0.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .article h2 {
+    font-size: 1.2em; /* Slightly smaller font size for titles */
+  }
+
+  .article p {
+    margin: 0.25rem 0; /* Reduce margin for paragraphs */
+  }
 }
