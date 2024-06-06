@@ -25,7 +25,7 @@ const Article: React.FC<ArticleProps> = ({
   onClick,
 }) => {
   return (
-    <div className={`${styles.article} ${isExpanded ? styles.expanded : ""}`}>
+    <div className={styles.article}>
       <h2 onClick={onClick} className={styles.title}>
         {title}
       </h2>

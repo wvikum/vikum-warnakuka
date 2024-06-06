@@ -21,18 +21,14 @@ const Home: React.FC<HomeProps> = ({ articles }) => {
   const [expandedArticleIndex, setExpandedArticleIndex] = useState<
     number | null
   >(null);
-  const [headerHeight, setHeaderHeight] = useState(0);
 
   const toggleArticle = (index: number) => {
     setExpandedArticleIndex(index === expandedArticleIndex ? null : index);
   };
 
   return (
-    <div
-      className={styles.container}
-      style={{ paddingTop: `${headerHeight}px` }}
-    >
-      <Header setHeaderHeight={setHeaderHeight} />
+    <div className={styles.container}>
+      <Header />
       {articles.map((article, index) => (
         <Article
           key={index}
