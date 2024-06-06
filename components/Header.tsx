@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
 
@@ -16,9 +16,14 @@ const profileData = {
   ],
 };
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  setHeaderHeight: (height: number) => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ setHeaderHeight }) => {
   const { name, title, profileImgSrc, socialLinks } = profileData;
   const [isHidden, setIsHidden] = useState(false);
+  const headerRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
     if (window.scrollY > 50) {
@@ -30,10 +35,13 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    if (headerRef.current) {
+      setHeaderHeight(headerRef.current.offsetHeight);
+    }
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setHeaderHeight]);
 
   const renderSocialLinks = () =>
     socialLinks.map((link, index) => (
@@ -44,7 +52,10 @@ const Header: React.FC = () => {
     ));
 
   return (
-    <header className={`${styles.header} ${isHidden ? styles.hidden : ""}`}>
+    <header
+      ref={headerRef}
+      className={`${styles.header} ${isHidden ? styles.hidden : ""}`}
+    >
       <Image
         src={profileImgSrc}
         alt="Profile Picture"

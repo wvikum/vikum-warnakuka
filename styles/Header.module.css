@@ -32,6 +32,14 @@
   position: relative;
 }
 
+.header h1 {
+  font-size: 3rem; /* Adjust font size for desktop */
+}
+
+.header p {
+  font-size: 1.3rem; /* Adjust font size for desktop */
+}
+
 .socialLinks a {
   color: #6b80ea;
   text-decoration: none;
@@ -40,11 +48,6 @@
 
 .socialLinks a:hover {
   text-decoration: underline;
-}
-
-.content {
-  margin-top: 40vh; /* Push content down to start below the header */
-  padding: 20px;
 }
 
 /* Media query for mobile devices */
@@ -57,17 +60,13 @@
     top: -30vh; /* Move header out of view for mobile devices */
   }
 
-  .content {
-    margin-top: 30vh; /* Adjust content margin for mobile devices */
-  }
-
   .profileImg {
     width: 80px; /* Adjust profile image size for mobile devices */
     height: 80px;
   }
 
   .header h1 {
-    font-size: 1.5rem; /* Adjust font size for mobile devices */
+    font-size: 2rem; /* Adjust font size for mobile devices */
   }
 
   .header p {
