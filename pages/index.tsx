@@ -18,29 +18,29 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = ({ articles }) => {
-  const [expandedArticleIndex, setExpandedArticleIndex] = useState<
-    number | null
-  >(null);
+  const [expandedArticleIndex, setExpandedArticleIndex] = useState<number | null>(null);
+  const [headerHeight, setHeaderHeight] = useState(0);
 
   const toggleArticle = (index: number) => {
     setExpandedArticleIndex(index === expandedArticleIndex ? null : index);
   };
 
   return (
-    <div className={styles.container}>
-      <Header />
-      {articles.map((article, index) => (
-        <Article
-          key={index}
-          title={article.title}
-          date={article.date}
-          description={article.description}
-          content={article.content}
-          isExpanded={expandedArticleIndex === index}
-          onClick={() => toggleArticle(index)}
-        />
-      ))}
-    </div>
+      <div className={styles.container}>
+        <div className={styles.background}></div> {/* Background Image */}
+        <Header setHeaderHeight={setHeaderHeight} />
+        {articles.map((article, index) => (
+            <Article
+                key={index}
+                title={article.title}
+                date={article.date}
+                description={article.description}
+                content={article.content}
+                isExpanded={expandedArticleIndex === index}
+                onClick={() => toggleArticle(index)}
+            />
+        ))}
+      </div>
   );
 };
 
@@ -62,9 +62,7 @@ export async function getStaticProps() {
   });
 
   // Sort articles by date in descending order
-  articles.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
+  articles.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return {
     props: {
