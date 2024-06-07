@@ -71,7 +71,6 @@ services:
       - K6_STATSD_ADDR=datadog-agent:8125
       - K6_STATSD_ENABLE_TAGS=true
       - AUTH_TOKEN=${AUTH_TOKEN}
-      - DEPUTY_ACCESS_TOKEN=${DEPUTY_ACCESS_TOKEN}
       - BASE_URL=${BASE_URL}
     networks:
       - mynetwork
