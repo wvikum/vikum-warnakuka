@@ -10,14 +10,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.code-block {
-  background-color: #272822; /* Monokai background color */
-  color: #0a2d13; /* Monokai text color */
-  padding: 16px;
-  border-radius: 8px;
-  overflow-x: auto;
-  font-family: 'Source Code Pro', monospace;
-}
 
 a {
   color: #1e90ff; /* Optional: change link color */

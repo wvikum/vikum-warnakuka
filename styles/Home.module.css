@@ -37,6 +37,14 @@
 
 .header h1 {
   font-size: 2rem; /* Adjust font size for desktop */
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  line-height: 0.8; /* Adjust as needed */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.3s;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #0a0a0a;
 }
 
 .header p {
