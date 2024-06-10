@@ -28,5 +28,4 @@ Capturing and analyzing HTTP traffic is crucial for mobile testing and cybersecu
 ### Note
 In case you are unable to connect with the proxy, turn off your antivirus software and allow the firewall to access Burp Suite on the local network. For iOS latest versions, you will be asked to "review the profile in settings app" when you go to install the certificate.
 
-Here's a sample code snippet to configure proxy settings on an iOS device programmatically:
 

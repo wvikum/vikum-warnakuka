@@ -30,7 +30,13 @@ A hybrid approach that combines both frontend and backend performance testing ca
 - **Run Bulk Load on Protocol-Level:** Execute a large number of virtual users to test backend performance.
 - **Spin Up Virtual Users at Browser Level:** Simulate a few real user interactions at the browser level to capture frontend performance metrics.
 
-### Core Web Vitals
+### What More Can We capture from the Browser Level?
+
+As mentioned in previous sections, k6 captures various important metrics related to performance. To gain a deeper understanding of browser performance, we can utilize the following extended metrics when performing browser-level load testing.
+
+referece: [Built-in metrics](https://k6.io/docs/using-k6/metrics/reference/#browser)
+
+The k6 browser module emits its own metrics based on the Core Web Vitals.
 
 | **CORE WEB VITAL**       | **DESCRIPTION**                                                                 |
 |--------------------------|---------------------------------------------------------------------------------|
